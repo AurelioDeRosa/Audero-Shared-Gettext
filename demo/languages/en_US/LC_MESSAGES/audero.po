@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Audero Shared Gettext\n"
+"POT-Creation-Date: 2014-01-20 20:15+0100\n"
+"PO-Revision-Date: 2014-01-20 20:16+0100\n"
+"Last-Translator: Aurelio De Rosa <aurelioderosa@gmail.com>\n"
+"Language-Team: Aurelio De Rosa <a.derosa@audero.it>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../index.php:45
+msgid "SALUTATION_PARAGRAPH"
+msgstr "Hi there! I'm Aurelio De Rosa and this is Audero Shared Gettext."
+
+#: ../../../index.php:48
+msgid "DEMO_PARAGRAPH"
+msgstr "This is a demo paragraph."
+
+#: ../../../index.php:52
+msgid "Created by"
+msgstr "Created by"

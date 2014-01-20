@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="Audero Shared Gettext" version="2.2.0&#10;">
+  <partials/>
+  <file path="SharedGettext.php" generated-path="SharedGettext.html" hash="5fa3329b69990674c60ef82432fa19b3" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+    </docblock>
+    <class final="false" abstract="false" namespace="Audero\SharedGettext" line="24" package="Default">
+      <extends/>
+      <name>SharedGettext</name>
+      <full_name>\Audero\SharedGettext\SharedGettext</full_name>
+      <docblock line="24">
+        <description>Audero Shared Gettext allows you to bypass the problem of the translations, loaded via the gettext function, that
+are cached by Apache. In fact, once a translation is loaded Apache caches it, so unless you can restart the engine
+any update to a translation file won't be seen. This is particularly annoying if you work on a shared hosting where
+you don't have administrator permissions.</description>
+        <long-description>PHP version 5.3
+
+WARRANTY: The software is provided "as is", without warranty of any kind,
+express or implied, including but not limited to the warranties of
+merchantability, fitness for a particular purpose and noninfringement.
+In no event shall the authors or copyright holders be liable for any claim,
+damages or other liability, whether in an action of contract, tort or otherwise,
+arising from, out of or in connection with the software or the use or
+other dealings in the software.</long-description>
+        <tag name="author" line="24" description="Aurelio De Rosa" link="mailto:aurelioderosa@gmail.com"/>
+        <tag name="license" line="24" description="CC BY-NC 4.0" link="http://creativecommons.org/licenses/by-nc/4.0/"/>
+      </docblock>
+      <constant namespace="Audero\SharedGettext" line="29" package="Default">
+        <name>FILE_EXTENSION</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::FILE_EXTENSION</full_name>
+        <value>'.mo'</value>
+        <docblock line="29">
+          <description>The extension of the translation's binary file</description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <property static="false" visibility="private" line="36" namespace="Audero\SharedGettext" package="Default">
+        <name>$translationsPath</name>
+        <default></default>
+        <docblock line="36">
+          <description>The path where the translations are stored</description>
+          <long-description></long-description>
+          <tag name="var" line="36" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="43" namespace="Audero\SharedGettext" package="Default">
+        <name>$language</name>
+        <default></default>
+        <docblock line="43">
+          <description>The language into which to translate</description>
+          <long-description></long-description>
+          <tag name="var" line="43" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" line="50" namespace="Audero\SharedGettext" package="Default">
+        <name>$domain</name>
+        <default></default>
+        <docblock line="50">
+          <description>The name of the translation file (referred as domain in gettext)</description>
+          <long-description></long-description>
+          <tag name="var" line="50" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="59" package="Default">
+        <name>__construct</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::__construct()</full_name>
+        <docblock line="59">
+          <description>The default constructor</description>
+          <long-description></long-description>
+          <tag name="param" line="59" description="&lt;p&gt;The path where the translations are stored&lt;/p&gt;" type="string" variable="$languagesPath">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="59" description="&lt;p&gt;The language into which to translate&lt;/p&gt;" type="string" variable="$language">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="59" description="&lt;p&gt;The name of the translation file (referred as domain in gettext)&lt;/p&gt;" type="string" variable="$domain">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$languagesPath</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$language</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$domain</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="71" package="Default">
+        <name>getTranslationsPath</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::getTranslationsPath()</full_name>
+        <docblock line="71">
+          <description>Retrieves the path where the translations are stored</description>
+          <long-description></long-description>
+          <tag name="return" line="71" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="83" package="Default">
+        <name>setTranslationsPath</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::setTranslationsPath()</full_name>
+        <docblock line="83">
+          <description>Sets the path where the translations are stored</description>
+          <long-description></long-description>
+          <tag name="param" line="83" description="&lt;p&gt;The path where the translations are stored&lt;/p&gt;" type="string" variable="$languagesPath">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="83" description="" type="\Audero\SharedGettext\SharedGettext">
+            <type link="SharedGettext.html">\Audero\SharedGettext\SharedGettext</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$languagesPath</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="95" package="Default">
+        <name>getLanguage</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::getLanguage()</full_name>
+        <docblock line="95">
+          <description>Retrieves the language into which to translate</description>
+          <long-description></long-description>
+          <tag name="return" line="95" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="109" package="Default">
+        <name>setLanguage</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::setLanguage()</full_name>
+        <docblock line="109">
+          <description>Sets the language into which to translate</description>
+          <long-description></long-description>
+          <tag name="param" line="109" description="&lt;p&gt;The language into which to translate&lt;/p&gt;" type="string" variable="$language">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="109" description="" type="\Audero\SharedGettext\SharedGettext">
+            <type link="SharedGettext.html">\Audero\SharedGettext\SharedGettext</type>
+          </tag>
+          <tag name="throws" line="109" description="" type="\InvalidArgumentException">
+            <type link="InvalidArgumentException.html">\InvalidArgumentException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$language</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="124" package="Default">
+        <name>getDomain</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::getDomain()</full_name>
+        <docblock line="124">
+          <description>Retrieves the name of the translation file (referred as domain in gettext)</description>
+          <long-description></long-description>
+          <tag name="return" line="124" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="136" package="Default">
+        <name>setDomain</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::setDomain()</full_name>
+        <docblock line="136">
+          <description>Sets the domain of the name of the translation file (referred as domain in gettext)</description>
+          <long-description></long-description>
+          <tag name="param" line="136" description="&lt;p&gt;The name of the translation file (referred as domain in gettext)&lt;/p&gt;" type="string" variable="$domain">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="136" description="" type="\Audero\SharedGettext\SharedGettext">
+            <type link="SharedGettext.html">\Audero\SharedGettext\SharedGettext</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$domain</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="148" package="Default">
+        <name>getTranslationPath</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::getTranslationPath()</full_name>
+        <docblock line="148">
+          <description>Returns the path to the translation file of the chosen language</description>
+          <long-description></long-description>
+          <tag name="return" line="148" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Audero\SharedGettext" line="163" package="Default">
+        <name>isLanguageCodeValid</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::isLanguageCodeValid()</full_name>
+        <docblock line="163">
+          <description>Check if the given language code complies with the ISO 3166 standard</description>
+          <long-description></long-description>
+          <tag name="param" line="163" description="&lt;p&gt;The language code to test&lt;/p&gt;" type="string" variable="$language">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="163" description="" type="bool">
+            <type>bool</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$language</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="173" package="Default">
+        <name>translationExists</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::translationExists()</full_name>
+        <docblock line="173">
+          <description>Check if the translation's file for the chosen language exists</description>
+          <long-description></long-description>
+          <tag name="return" line="173" description="" type="bool">
+            <type>bool</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="185" package="Default">
+        <name>updateTranslation</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::updateTranslation()</full_name>
+        <docblock line="185">
+          <description>Create a mirror copy of the translation file</description>
+          <long-description></long-description>
+          <tag name="return" line="185" description="The name of the created translation file (referred as domain in gettext)" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="185" description="If the translation's file cannot be found" type="\Exception">
+            <type link="Exception.html">\Exception</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Audero\SharedGettext" line="206" package="Default">
+        <name>deleteOldTranslations</name>
+        <full_name>\Audero\SharedGettext\SharedGettext::deleteOldTranslations()</full_name>
+        <docblock line="206">
+          <description>Remove all the mirror copies but the last from the folder of the chosen translation</description>
+          <long-description></long-description>
+          <tag name="return" line="206" description="" type="\Audero\SharedGettext\SharedGettext">
+            <type link="SharedGettext.html">\Audero\SharedGettext\SharedGettext</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>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</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <namespace name="Audero" full_name="Audero">
+    <namespace name="SharedGettext" full_name="Audero\SharedGettext"/>
+  </namespace>
+  <deprecated count="0"/>
+</project>

@@ -1,0 +1,29 @@
+{
+    "name": "audero/audero-shared-gettext",
+    "description": "Audero Shared Gettext allows to bypass the problem of translations, loaded via the gettext function, that are cached by Apache.",
+    "type": "library",
+    "keywords": ["internationalization", "i18n", "gettext"],
+    "homepage": "https://github.com/AurelioDeRosa/Audero-Shared-Gettext/",
+    "license": "CC-BY-NC-4.0",
+    "authors": [
+        {
+            "name": "Aurelio De Rosa",
+            "email": "a.derosa@audero.it",
+            "homepage": "http://www.audero.it",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "a.derosa@audero.it",
+        "issues": "https://github.com/AurelioDeRosa/Audero-Shared-Gettext/issues",
+        "source": "https://github.com/AurelioDeRosa/Audero-Shared-Gettext/"
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Audero\\SharedGettext": "src/"
+        }
+    }
+}
